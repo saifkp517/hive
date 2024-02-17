@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "init": "bunx prisma init --datasource-provider postgresql",
+    "dev": "bun --watch run server.ts",
+    "migrate": "bunx prisma migrate dev --name init",
+    "migrate --create-only": "npx prisma migrate dev --create-only"
+  },
+  "dependencies": { "@prisma/client": "^5.9.1", "express": "^4.18.2" },
+  "devDependencies": {
+    "prisma": "^5.9.1"
+  }
+}
